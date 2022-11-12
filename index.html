@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Lesson 10</title>
+
+</head>
+
+<body>
+    <div class="createOrder">
+        <h3>Available Crusts</h3>
+        <p>Original</p>
+        <p>Thin Crust</p>
+
+        <h3>Available Sauces</h3>
+        <p>Classic Tomato</p>
+        <p>Spicy Marinara</p>
+        <p>White Garlic Sauce</p>
+
+        <h3>Available Toppings</h3>
+        <p>Chicken</p>
+        <p>Pepperoni</p>
+        <p>Cheese</p>
+        <p>Mushrooms</p>
+        <p>Baby Spinach</p>
+        <p>Olives</p>
+    </div>
+
+    <div>
+        <form>
+        <div>  
+            <label for="crust">Choose Your Crust:</label>
+            <input type="text" id="crust" /><br>
+        </div>
+        <div>     
+            <label for="sauce">Choose Your Sauce:</label>
+            <input type="text" id="sauce" /><br>
+        </div>    
+            <label for="topping1">Topping 1:</label>
+            <input type="text" id="topping1" />
+            <label for="topping2">Topping 2:</label>
+            <input type="text" id="topping2" />
+            <label for="topping3">Topping 3:</label>
+            <input type="text" id="topping3" />
+            <button type="submit" id="btn">Create Order</button>
+        </form>
+    </div>
+
+    <div id="order">
+        <p>Completed Pizza Order:</p>
+        <div id="pizzaOrder"></div>
+        <div id="toppings"></div>
+        <p>Sales Total:</p>
+        <div id="total"></div>
+    </div>
+</body>
+
+</html>
