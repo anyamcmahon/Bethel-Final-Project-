@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 
 <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
     <title>Lesson 10</title>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <div id="hungryHeader">
+        <h1>WHO'S HUNGRY?</h1>
+    </div>
     <div class="createOrder">
-        <h3>Available Crusts</h3>
+        <h3 id="header1"><u>AVAILABLE CRUSTS</u></h3>
         <p>Original</p>
         <p>Thin Crust</p>
-
-        <h3>Available Sauces</h3>
+            <br><br>
+        <h3><u>AVAILABLE SAUCES</u></h3>
         <p>Classic Tomato</p>
         <p>Spicy Marinara</p>
         <p>White Garlic Sauce</p>
-
-        <h3>Available Toppings</h3>
+            <br><br>
+        <h3><u>AVAILABLE TOPPINGS</u></h3>
         <p>Chicken</p>
         <p>Pepperoni</p>
         <p>Cheese</p>
@@ -25,22 +32,22 @@
         <p>Olives</p>
     </div>
 
-    <div>
+    <div id="orderForm">
         <form>
         <div>  
             <label for="crust">Choose Your Crust:</label>
-            <input type="text" id="crust" /><br>
+            <input type="text" id="crust" /><br><br>
         </div>
         <div>     
             <label for="sauce">Choose Your Sauce:</label>
-            <input type="text" id="sauce" /><br>
+            <input type="text" id="sauce" /><br><br>
         </div>    
             <label for="topping1">Topping 1:</label>
-            <input type="text" id="topping1" />
+            <input type="text" id="topping1" /><br><br>
             <label for="topping2">Topping 2:</label>
-            <input type="text" id="topping2" />
+            <input type="text" id="topping2" /><br><br>
             <label for="topping3">Topping 3:</label>
-            <input type="text" id="topping3" />
+            <input type="text" id="topping3" /><br><br>
             <button type="submit" id="btn">Create Order</button>
         </form>
     </div>
@@ -52,6 +59,7 @@
         <p>Sales Total:</p>
         <div id="total"></div>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
