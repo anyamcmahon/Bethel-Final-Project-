@@ -1,6 +1,7 @@
 // Global variables
 var crust = document.getElementById("crust");
 var sauce = document.getElementById("sauce");
+var myButton = document.getElementById("btn");
 
 // toppings array
 var toppingArray = ["Chicken", "Pepperoni", "Cheese", "Mushrooms", "Baby Spinach", "Olives"]
@@ -10,20 +11,20 @@ myButton.addEventListener("click", function (e) {
     e.preventDefault();
 
     let topping1 = document.getElementById("topping1").value;
-        var postTopping1 = document.getElementById("postTopping1");
-        postTopping1.innerHTML = topping1;
+        // var postTopping1 = document.getElementById("postTopping1");
+        // postTopping1.innerHTML = topping1;
 
     let topping2 = document.getElementById("topping2").value;
-        var postTopping2 = document.getElementById("postTopping2");
-        postTopping2.innerHTML = topping2;
+        // var postTopping2 = document.getElementById("postTopping2");
+        // postTopping2.innerHTML = topping2;
 
     let topping3 = document.getElementById("topping3").value;
-        var postTopping3 = document.getElementById("postTopping3");
-        postTopping3.innerHTML = topping3;
+        // var postTopping3 = document.getElementById("postTopping3");
+        // postTopping3.innerHTML = topping3;
 
     toppingArray.push(topping1, topping2, topping3);
 
-    calculateTotal(toppingArray) //toppingArray or toppings??
+    calculateTotal(toppingArray) 
 })
 
 
@@ -38,14 +39,24 @@ function calculateTotal(toppingArray) {
     let toppingString = "Toppings: ";
 
     for(var i = 0; i < toppingArray.length; i++){
-        var toppingTotal = toppingCost + baseCost;
-        if(i <= toppingArray.length[i]-1){
-
+        total = toppingString + baseCost;
+        //toppingString = toppingCost * toppingArray[i] + " ";
+        
+        if(i <= toppingString.length[i]-1){
+            toppingCost * toppingArray[i];
         }
-    }
-    // let total = baseCost.value + toppingTotal.value // total = baseCost + cost of all toppings
+    let total = baseCost + toppingString // total = baseCost + cost of all toppings
+    }}    
+    
+    document.getElementById("total").innerHTML += total // set DOM total += total
+        var postTotal = document.getElementById("postTotal");
+        postTotal.innerHTML = total;    
 
-    // set DOM total += total   
-    // use DOM: = orderString   
-    // use DOM: = toppingString 
-}
+    document.getElementById("orderString").innterHTML += orderString // use DOM: = orderString
+        var postOrderString = document.getElementById("postOrderString");
+        postOrderString.innerHTML = orderString;    
+
+    document.getElementById("toppingString").innerHTML += toppingString // use DOM: = toppingString
+        var postToppingString = document.getElementById("postToppingString");
+        postToppingString.innerHTML = toppingString; 
+

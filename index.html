@@ -11,18 +11,18 @@
 
 <body>
     <div id="hungryHeader">
-        <h1>WHO'S HUNGRY?</h1>
+        <h1>CREATE YOUR OWN PIZZA</h1>
     </div>
     <div class="createOrder">
         <h3 id="header1"><u>AVAILABLE CRUSTS</u></h3>
         <p>Original</p>
         <p>Thin Crust</p>
-            <br><br>
+            <br>
         <h3><u>AVAILABLE SAUCES</u></h3>
         <p>Classic Tomato</p>
         <p>Spicy Marinara</p>
         <p>White Garlic Sauce</p>
-            <br><br>
+            <br>
         <h3><u>AVAILABLE TOPPINGS</u></h3>
         <p>Chicken</p>
         <p>Pepperoni</p>
@@ -34,21 +34,21 @@
 
     <div id="orderForm">
         <form>
-        <div>  
+        <div id="crustSauce">  
             <label for="crust">Choose Your Crust:</label>
-            <input type="text" id="crust" /><br><br>
-        </div>
-        <div>     
+            <input type="text" id="crust" />   
             <label for="sauce">Choose Your Sauce:</label>
             <input type="text" id="sauce" /><br><br>
         </div>    
+        <div id="toppingForm">    
             <label for="topping1">Topping 1:</label>
-            <input type="text" id="topping1" /><br><br>
+            <input type="text" id="topping1" /> <!--<br><br> -->
             <label for="topping2">Topping 2:</label>
-            <input type="text" id="topping2" /><br><br>
+            <input type="text" id="topping2" /> <!--<br><br> -->
             <label for="topping3">Topping 3:</label>
-            <input type="text" id="topping3" /><br><br>
+            <input type="text" id="topping3" /> <br><br>
             <button type="submit" id="btn">Create Order</button>
+        </div>    
         </form>
     </div>
 
